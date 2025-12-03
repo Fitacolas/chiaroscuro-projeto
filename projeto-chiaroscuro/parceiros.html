@@ -4,34 +4,27 @@
     <meta charset="utf-8">
     <title>Parceiros - Chiaroscuro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Link para o CSS do Bootstrap para estilização da página -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link para o CSS do Font Awesome para ícones -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Link para a font personalizada -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Link para o arquivo CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Link de skip para acessibilidade, permite pular para o conteúdo principal -->
     <a href="#main-content" class="skip-link">Saltar para o conteúdo principal</a>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bold ls-2" href="index.html"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir Menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto gap-3">
                         <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
                         <li class="nav-item"><a class="nav-link" href="projeto.html">A Investigação</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="parceiros.html">Parceiros</a></li>
                         <li class="nav-item"><a class="nav-link" href="contactos.html">Acesso</a></li>
                     </ul>
                 </div>
@@ -39,7 +32,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="hero-subpage text-center">
             <div class="container">
                 <h1 class="animate-fade">ECOSSISTEMA</h1>
@@ -61,15 +54,15 @@
 
                     <div class="col-md-4 col-sm-6">
                         <article class="partner-card h-100 text-center p-4 rounded">
-                            <i class="fab fa-microsoft fa-3x mb-3 text-secondary"></i>
-                            <h3 class="h5 fw-bold">Microsoft Azure</h3>
-                            <p class="small text-secondary mb-0">Alojamento e infraestrutura cloud através do programa <em>Azure for Students</em>.</p>
+                            <i class="fab fa-google fa-3x mb-3 text-secondary"></i>
+                            <h3 class="h5 fw-bold">Google Firebase</h3>
+                            <p class="small text-secondary mb-0">Alojamento seguro, rápido e escalável utilizando a infraestrutura Google Cloud.</p>
                         </article>
                     </div>
 
                     <div class="col-md-4 col-sm-6">
                         <article class="partner-card h-100 text-center p-4 rounded">
-                            <i class="fas fa-lightbulbulp fa-3x mb-3 text-secondary"></i>
+                            <i class="fas fa-lightbulb fa-3x mb-3 text-secondary"></i>
                             <h3 class="h5 fw-bold">Humane Tech</h3>
                             <p class="small text-secondary mb-0">Seguimos os princípios éticos do <em>Center for Humane Technology</em>.</p>
                         </article>
@@ -87,34 +80,36 @@
                         <article class="partner-card h-100 text-center p-4 rounded">
                             <i class="fas fa-book-open fa-3x mb-3 text-secondary"></i>
                             <h3 class="h5 fw-bold">Fontes Bibliográficas</h3>
-                            <p class="small text-secondary mb-0">Gloria Mark (UCI), Nir Eyal e Paul Slovic (University of Oregon).</p>
+                            <p class="small text-secondary mb-0">
+                                <a href="https://gloriamark.com/attention-span/" target="_blank" class="text-secondary text-decoration-underline">Gloria Mark</a>, 
+                                <a href="https://www.nirandfar.com/hooked/" target="_blank" class="text-secondary text-decoration-underline">Nir Eyal</a> e 
+                                <a href="https://www.arithmeticofcompassion.org/" target="_blank" class="text-secondary text-decoration-underline">Paul Slovic</a>.
+                            </p>
                         </article>
                     </div>
 
                      <div class="col-md-4 col-sm-6">
-                        <article class="partner-card h-100 text-center p-4 rounded border border-white">
-                            <i class="fab fa-github fa-3x mb-3 text-white"></i>
-                            <h3 class="h5 fw-bold text-white">Open Source</h3>
-                            <p class="small text-white mb-0">Este projeto está disponível no GitHub para fins educativos.</p>
+                        <article class="partner-card h-100 text-center p-4 rounded">
+                            <a href="https://github.com/Fitacolas/chiaroscuro-projeto" target="_blank" class="text-decoration-none">
+                                <i class="fab fa-github fa-3x mb-3 text-white"></i>
+                                <h3 class="h5 fw-bold text-white">Open Source</h3>
+                                <p class="small text-white mb-0">Consulta o código fonte oficial do projeto no GitHub.</p>
+                            </a>
                         </article>
                     </div>
 
                 </div>
             </div>
         </section>
-
-        <section class="py-5 text-center">
-            <div class="container">
-                <a href="index.html" class="btn btn-outline-light px-5">Voltar ao Início</a>
-            </div>
-        </section>
     </main>
 
     <footer>
         <div class="container text-center">
-            <p class="mb-0 text-secondary small">© 2025 Chiaroscuro Lab.</p>
+            <p class="mb-0 text-secondary small">© 2025 Chiaroscuro Lab. Engenharia Informática - ISLA Gaia.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
+    <script src="main.js"></script>
 </body>
 </html>

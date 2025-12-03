@@ -4,27 +4,20 @@
     <meta charset="utf-8">
     <title>A Investigação - Chiaroscuro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Link para o CSS do Bootstrap para estilização da página -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link para o CSS do Font Awesome para ícones -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Link para a font personalizada -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Link para o arquivo CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Link de skip para acessibilidade, permite pular para o conteúdo principal -->
     <a href="#main-content" class="skip-link">Saltar para o conteúdo principal</a>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bold ls-2" href="index.html"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir Menu de Navegação">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir Menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
@@ -40,7 +33,6 @@
     </header>
 
     <main id="main-content">
-        
         <section class="hero-subpage text-center">
             <div class="container">
                 <h1 class="animate-fade">DADOS & ALGORITMOS</h1>
@@ -71,19 +63,16 @@
                 <div class="row g-5 align-items-center mb-5">
                     <div class="col-lg-6">
                         <h3 class="h4 fw-bold text-white mb-3">1. O Colapso da Atenção (47s)</h3>
-                        <p class="text-secondary">Segundo a investigadora <strong>Gloria Mark</strong> (Universidade da Califórnia), a capacidade humana de manter o foco num único ecrã antes de mudar de contexto caiu drasticamente nas últimas duas décadas.</p>
-                        
-                        <p class="text-secondary">Esta fragmentação não é inócua. O design de scroll infinito elimina propositadamente os pontos de paragem naturais, mantendo o utilizador num estado perpétuo de atenção parcial contínua e impedindo o pensamento profundo e crítico.</p>
-
+                        <p class="text-secondary">Segundo a investigadora <strong>Gloria Mark</strong> (Universidade da Califórnia), a capacidade humana de manter o foco num único ecrã caiu drasticamente.</p>
                         <ul class="methodology-list list-unstyled mt-4">
-                            <li class="mb-2"><strong class="text-white">2004:</strong> 2m 30s (Média de foco).</li>
+                            <li class="mb-2"><strong class="text-white">2004:</strong> 2m 30s.</li>
                             <li class="mb-2"><strong class="text-white">2012:</strong> 1m 15s.</li>
                             <li class="mb-0"><strong class="text-white">2023:</strong> <span class="text-danger fw-bold">47 segundos.</span></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 text-center">
                         <div class="card p-3 bg-darker border-secondary">
-                            <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid rounded">
+                            <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid rounded" aria-label="Gráfico de queda de atenção">
                                 <rect width="500" height="300" fill="#111"/>
                                 <line x1="50" y1="250" x2="450" y2="250" stroke="#555" stroke-width="2"/>
                                 <line x1="50" y1="250" x2="50" y2="50" stroke="#555" stroke-width="2"/>
@@ -106,20 +95,17 @@
                 <div class="row g-5 align-items-center mb-5">
                     <div class="col-lg-6">
                         <h3 class="h4 fw-bold text-white mb-3">2. O Modelo "Hook" (Vício)</h3>
-                        <p class="text-secondary">Analisámos a engenharia de software das maiores redes sociais baseada no <strong>Modelo de Fogg/Eyal</strong>. O algoritmo cria um hábito subconsciente através de um ciclo de 4 passos.</p>
-                        
-                        <p class="text-secondary">A chave da retenção não é a recompensa, mas a sua <strong>imprevisibilidade</strong>. Tal como numa "slot machine", a incerteza do próximo conteúdo no feed gera picos de dopamina superiores aos de uma recompensa previsível, cimentando o comportamento de scroll.</p>
-
+                        <p class="text-secondary">Analisámos a engenharia de software baseada no <strong>Modelo de Fogg/Eyal</strong>. O algoritmo cria um hábito subconsciente.</p>
                         <ol class="text-secondary mt-4">
-                            <li class="mb-2"><strong>Gatilho:</strong> A notificação externa ou o tédio interno.</li>
-                            <li class="mb-2"><strong>Ação:</strong> O movimento físico do polegar (Scroll).</li>
-                            <li class="mb-2"><strong>Recompensa Variável:</strong> O conteúdo incerto (Dopamina).</li>
-                            <li class="mb-0"><strong>Investimento:</strong> Likes e dados que prendem o utilizador.</li>
+                            <li class="mb-2"><strong>Gatilho:</strong> Notificação ou tédio.</li>
+                            <li class="mb-2"><strong>Ação:</strong> O movimento do polegar (Scroll).</li>
+                            <li class="mb-2"><strong>Recompensa Variável:</strong> O conteúdo incerto.</li>
+                            <li class="mb-0"><strong>Investimento:</strong> Likes e dados.</li>
                         </ol>
                     </div>
                     <div class="col-lg-6 text-center">
                         <div class="card p-3 bg-darker border-secondary">
-                             <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid rounded">
+                             <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid rounded" aria-label="Diagrama do Modelo Hook">
                                 <rect width="500" height="300" fill="#111"/>
                                 <circle cx="250" cy="150" r="120" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="10 5"/>
                                 <path d="M 250 30 A 120 120 0 0 1 370 150" fill="none" stroke="#fff" stroke-width="3" />
@@ -139,18 +125,14 @@
                 <div class="row g-5 align-items-center">
                      <div class="col-lg-6">
                         <h3 class="h4 fw-bold text-white mb-3">3. Entorpecimento Psíquico</h3>
-                        <p class="text-secondary">Baseado nos estudos de <strong>Paul Slovic</strong> sobre a "Aritmética da Compaixão", o nosso modelo demonstra que à medida que a velocidade e volume de estímulos aumentam, a resposta empática diminui.</p>
-                        
-                        <p class="text-secondary">A empatia é um processo cognitivo "lento". A alta velocidade do feed força o cérebro a operar no "Sistema 1" (rápido e superficial), inibindo o "Sistema 2" necessário para processar o sofrimento alheio. O resultado é o "Blur": uma indiferença funcional para evitar o colapso emocional.</p>
-
+                        <p class="text-secondary">Baseado nos estudos de <strong>Paul Slovic</strong>, o nosso modelo demonstra que à medida que o volume de estímulos aumenta, a resposta empática diminui.</p>
                         <blockquote class="blockquote custom-blockquote mt-4 border-start border-3 border-white ps-3">
                             <p class="mb-0 fst-italic">"Quanto mais vemos, menos sentimos. A estatística é uma tragédia sem rosto."</p>
-                            <footer class="blockquote-footer mt-2 text-secondary">Conclusão do Lab Chiaroscuro</footer>
                         </blockquote>
                     </div>
                     <div class="col-lg-6 text-center">
                          <div class="card p-3 bg-darker border-secondary">
-                            <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid rounded">
+                            <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" class="img-fluid rounded" aria-label="Gráfico de Entorpecimento Psíquico">
                                 <rect width="500" height="300" fill="#111"/>
                                 <line x1="50" y1="250" x2="450" y2="250" stroke="#555" stroke-width="2"/>
                                 <line x1="50" y1="250" x2="50" y2="50" stroke="#555" stroke-width="2"/>
@@ -171,33 +153,28 @@
             <div class="container">
                 <h2 class="text-center fw-bold mb-3">O Nosso Contributo</h2>
                 <p class="text-center text-secondary mb-5">Como aplicámos esta investigação no desenvolvimento do Chiaroscuro.</p>
-                
                 <div class="row g-4 text-center">
-                    
                     <div class="col-md-4">
                         <div class="timeline-box p-4 h-100 rounded">
                             <h3 class="display-6 fw-bold text-secondary">Fase 1</h3>
                             <p class="text-uppercase small ls-2 mb-3">Revisão Bibliográfica</p>
-                            <p class="small text-secondary">Análise e compilação dos estudos existentes sobre atenção e algoritmos (Mark, Eyal, Slovic).</p>
+                            <p class="small text-secondary">Análise e compilação dos estudos existentes sobre atenção e algoritmos.</p>
                         </div>
                     </div>
-
                     <div class="col-md-4">
-                        <div class="timeline-box p-4 h-100 rounded border-white bg-dark">
-                            <h3 class="display-6 fw-bold text-white">Fase 2</h3>
-                            <p class="text-uppercase small ls-2 mb-3 text-white">Desenvolvimento Web</p>
-                            <p class="small text-white">Criação da plataforma "Chiaroscuro" para demonstrar visualmente o contraste digital.</p>
+                        <div class="timeline-box p-4 h-100 rounded">
+                            <h3 class="display-6 fw-bold text-secondary">Fase 2</h3>
+                            <p class="text-uppercase small ls-2 mb-3">Desenvolvimento Web</p>
+                            <p class="small text-secondary">Criação da plataforma "Chiaroscuro" para demonstrar visualmente o contraste digital.</p>
                         </div>
                     </div>
-
                     <div class="col-md-4">
                         <div class="timeline-box p-4 h-100 rounded">
                             <h3 class="display-6 fw-bold text-secondary">Fase 3</h3>
                             <p class="text-uppercase small ls-2 mb-3">Sensibilização</p>
-                            <p class="small text-secondary">Apresentação do projeto à comunidade académica e promoção da literacia digital.</p>
+                            <p class="small text-secondary">Apresentação do projeto à comunidade académica.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -209,14 +186,15 @@
                 </a>
             </div>
         </section>
-
     </main>
 
     <footer>
         <div class="container text-center">
-            <p class="mb-0 text-secondary small">© 2025 Chiaroscuro Lab.</p>
+            <p class="mb-0 text-secondary small">© 2025 Chiaroscuro Lab. Engenharia Informática - ISLA Gaia.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -4,27 +4,20 @@
     <meta charset="utf-8">
     <title>Solicitar Acesso - Chiaroscuro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Link para o CSS do Bootstrap para estilização da página -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link para o CSS do Font Awesome para ícones -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Link para a font personalizada -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Link para o arquivo CSS personalizado -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Link de skip para acessibilidade, permite pular para o conteúdo principal -->
     <a href="#main-content" class="skip-link">Saltar para o conteúdo principal</a>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand fw-bold ls-2" href="index.html"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir Menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu">
@@ -32,14 +25,14 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
                         <li class="nav-item"><a class="nav-link" href="projeto.html">A Investigação</a></li>
                         <li class="nav-item"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="contactos.html">Acesso</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contactos.html">Acesso</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section class="hero-subpage text-center">
             <div class="container">
                 <h1 class="animate-fade">REPOSITÓRIO DE DADOS</h1>
@@ -57,27 +50,25 @@
                                 <i class="fas fa-database me-2"></i> Dados Disponíveis
                             </h2>
                             <p class="small text-secondary mb-4">
-                                Devido à complexidade e volume da investigação, os ficheiros brutos não estão publicados na web. Mediante aprovação, disponibilizamos:
+                                Devido à complexidade da investigação, os ficheiros brutos não estão públicos. Disponibilizamos mediante aprovação:
                             </p>
-                            
                             <ul class="list-unstyled mb-4 small text-white">
                                 <li class="mb-3 border-bottom border-secondary pb-2">
                                     <i class="fas fa-file-excel me-2 text-success"></i> <strong>Dataset Bruto (CSV/XLS)</strong><br>
-                                    <span class="text-secondary">Logs de 5000 sessões de scroll simulado.</span>
+                                    <span class="text-secondary">Logs de 5000 sessões de scroll.</span>
                                 </li>
                                 <li class="mb-3 border-bottom border-secondary pb-2">
                                     <i class="fas fa-file-pdf me-2 text-danger"></i> <strong>Relatório Completo (PDF)</strong><br>
-                                    <span class="text-secondary">Metodologia detalhada e bibliografia extensa.</span>
+                                    <span class="text-secondary">Metodologia detalhada.</span>
                                 </li>
                                 <li class="mb-3">
                                     <i class="fas fa-code me-2 text-info"></i> <strong>Algoritmo de Teste (JS)</strong><br>
-                                    <span class="text-secondary">Código fonte usado para medir o tempo de atenção.</span>
+                                    <span class="text-secondary">Código fonte da medição de atenção.</span>
                                 </li>
                             </ul>
 
                             <div class="mt-4 pt-3 border-top border-secondary">
                                 <p class="small text-uppercase fw-bold text-secondary mb-2">Entidade Detentora:</p>
-                                
                                 <div class="d-flex align-items-center mb-3">
                                     <i class="fas fa-university fa-2x me-3 text-white"></i>
                                     <span class="small text-white">
@@ -85,7 +76,6 @@
                                         Departamento de Engenharia
                                     </span>
                                 </div>
-
                                 <div class="ratio ratio-1x1 border border-secondary rounded overflow-hidden shadow-sm">
                                     <iframe 
                                         src="https://maps.google.com/maps?q=ISLA%20Gaia%2C%20Rua%20Diogo%20de%20Macedo%20192&t=&z=15&ie=UTF8&iwloc=&output=embed" 
@@ -95,7 +85,6 @@
                                         title="Localização ISLA Gaia">
                                     </iframe>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -103,16 +92,16 @@
                     <div class="col-lg-7">
                         <div class="p-2">
                             <h2 class="h3 fw-bold mb-4">Formulário de Requisição</h2>
-                            <p class="text-secondary small mb-4">O acesso é restrito a fins académicos ou jornalísticos. Preencha a ficha para receber a chave de acesso.</p>
+                            <p class="text-secondary small mb-4">Acesso restrito a fins académicos. Preencha para receber a chave.</p>
                             
                             <form action="#" method="POST">
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <label for="nome" class="form-label small text-uppercase fw-bold text-secondary">Nome do Investigador</label>
+                                        <label for="nome" class="form-label small text-uppercase fw-bold text-secondary">Nome</label>
                                         <input type="text" class="form-control" id="nome" placeholder="O teu nome" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="instituicao" class="form-label small text-uppercase fw-bold text-secondary">Instituição / Faculdade</label>
+                                        <label for="instituicao" class="form-label small text-uppercase fw-bold text-secondary">Instituição</label>
                                         <input type="text" class="form-control" id="instituicao" placeholder="Ex: ISLA, UP..." required>
                                     </div>
                                     
@@ -132,15 +121,15 @@
                                     </div>
 
                                     <div class="col-12">
-                                        <label for="mensagem" class="form-label small text-uppercase fw-bold text-secondary">Observações Adicionais</label>
-                                        <textarea class="form-control" id="mensagem" rows="3" placeholder="Especifique se precisa de algum formato em particular..."></textarea>
+                                        <label for="mensagem" class="form-label small text-uppercase fw-bold text-secondary">Observações</label>
+                                        <textarea class="form-control" id="mensagem" rows="3" placeholder="Mensagem..."></textarea>
                                     </div>
 
                                     <div class="col-12">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" id="termos" required>
                                             <label class="form-check-label small text-secondary" for="termos">
-                                                Comprometo-me a citar o "Laboratório Chiaroscuro" em qualquer publicação derivada.
+                                                Comprometo-me a citar o "Laboratório Chiaroscuro".
                                             </label>
                                         </div>
                                     </div>
@@ -158,15 +147,15 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <div class="container text-center py-4">
+        <div class="container text-center">
             <p class="mb-0 text-secondary small">© 2025 Chiaroscuro Lab. Engenharia Informática - ISLA Gaia.</p>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js" defer></script>
+    <script src="main.js"></script>
 </body>
 </html>

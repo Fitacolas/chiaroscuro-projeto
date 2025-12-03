@@ -1,20 +1,24 @@
 /* ============================================================
-   STYLES.CSS - VERSÃO FINAL (CORREÇÃO DROPDOWN)
+   CHIAROSCURO DIGITAL
+   AUTORES: Ruben Lemos & Miguel Novo
+   DESCRIÇÃO: Folha de estilos principal (Design System).
    ============================================================ */
 
-/* 1. CONFIGURAÇÕES GERAIS */
+/* 1. CONFIGURAÇÕES GERAIS (RESET)
+   Define as cores base e a tipografia para todo o site. */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #000;
-    color: #e0e0e0;
+    background-color: #000; /* Fundo de segurança */
+    color: #e0e0e0; /* Texto claro para leitura confortável em fundo escuro */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Garante que o rodapé fica sempre no fundo */
 }
 
 a { text-decoration: none; }
 
-/* 2. O FUNDO ANIMADO */
+/* 2. FUNDO ANIMADO (GRADIENTE)
+   Cria a identidade visual do projeto com uma animação suave. */
 .gradient-background,
 .hero-section,
 .hero-subpage {
@@ -31,19 +35,15 @@ a { text-decoration: none; }
     100% { background-position: 0% 50%; }
 }
 
-/* 3. NAVBAR */
+/* 3. BARRA DE NAVEGAÇÃO (NAVBAR)
+   Estilo "Vidro" com fundo translúcido. */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    border-bottom: none;
+  background-color: #000000b3; /* Preto com transparência */
+  backdrop-filter: blur(10px); /* Efeito de desfoque */
+  border-bottom: none; /* Remove linhas indesejadas */
 }
 
-.logo-nav {
-    width: 45px; height: 45px;
-    border-radius: 50%; object-fit: cover;
-    border: 1px solid #777;
-}
-
+/* Estilo dos Links do Menu */
 .nav-link {
     color: #bbb !important;
     text-transform: uppercase;
@@ -56,6 +56,7 @@ a { text-decoration: none; }
     margin-left: 15px;
 }
 
+/* Animação do Sublinhado no Menu */
 .nav-link::after {
     content: '';
     position: absolute;
@@ -67,6 +68,7 @@ a { text-decoration: none; }
     transition: width 0.3s ease-in-out;
 }
 
+/* Mostra o sublinhado se o link estiver ativo ou no hover */
 .nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
@@ -76,44 +78,49 @@ a { text-decoration: none; }
     color: #fff !important;
 }
 
-/* 4. HERO & TÍTULOS */
+/* 4. CABEÇALHOS (HERO SECTIONS)
+   Configuração das áreas de destaque em cada página. */
 .hero-section {
-    min-height: 60vh; 
+    min-height: 60vh; /* Altura para a Homepage */
     display: flex; align-items: center; justify-content: center;
     padding-top: 40px;
 }
 
 .hero-subpage {
-    min-height: 50vh;
+    min-height: 50vh; /* Altura para páginas internas */
     display: flex; align-items: center; justify-content: center;
     padding-top: 60px;
 }
 
+/* Tipografia dos Títulos Principais */
 .hero-section h1, .hero-subpage h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    background: linear-gradient(90deg, #000000, #bdbdbdbd);
+    /* Texto com gradiente metálico */
+    background: linear-gradient(90deg, #000000, #bdbdbd);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0,0.8));
+    filter: drop-shadow(0px 2px 4px #000000cc);
 }
 
 .hero-section h2, .hero-subpage p {
     color: #000;
     font-weight: 600;
     text-align: center;
-    text-shadow: 0px 0px 10px rgba(255,255,255,0.9);
+    text-shadow: 0px 0px 10px #ffffffe6; /* Sombra branca para contraste */
 }
 
+/* Imagem do Logótipo Redondo */
 .logo-redondo {
     border-radius: 50%; object-fit: cover;
-    border: 4px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 4px solid #ffffff33;
+    box-shadow: 0 10px 30px #00000080;
 }
 
-/* 5. CLASSES DE UTILIDADE DARK MODE */
+/* 5. MODO ESCURO E CARTÕES
+   Classes utilitárias para garantir legibilidade no tema escuro. */
 section { padding: 80px 0; }
 
 .bg-light, .bg-white {
@@ -121,19 +128,20 @@ section { padding: 80px 0; }
     color: #fff !important;
 }
 .bg-darker {
-    background-color: #0a0a0a !important;
+    background-color: #0a0a0a !important; /* Fundo quase preto */
 }
 
+/* Estilo unificado para Cartões (Cards) */
 .card, article, .partner-card, .timeline-box {
-    background-color: rgba(20, 20, 20, 0.85) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #141414d9 !important; /* Fundo escuro */
+    border: 1px solid #ffffff1a;
     color: #fff;
     backdrop-filter: blur(5px);
     transition: transform 0.3s ease;
 }
 
 .card:hover, .partner-card:hover, .timeline-box:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Efeito de levitação */
     border-color: #fff;
     background-color: #000 !important;
 }
@@ -143,7 +151,8 @@ section { padding: 80px 0; }
 }
 .card:hover .member-img { opacity: 1; }
 
-/* 6. BOTÕES */
+/* 6. BOTÕES (DESIGN SYSTEM)
+   Regra unificada: Fundo Branco, Texto Preto. */
 .btn-light, .btn-outline-light {
     background-color: #ffffff !important;
     color: #000000 !important;
@@ -158,29 +167,32 @@ section { padding: 80px 0; }
     display: inline-block;
 }
 
+/* Efeito Hover nos botões */
 .btn-light:hover, 
 .btn-outline-light:hover {
     background-color: #ffffff !important;
     color: #000000 !important;
-    border: 2px solid #000000 !important;
+    border: 2px solid #000000 !important; /* Borda preta em destaque */
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+    box-shadow: 0 0 15px #ffffff80;
 }
 
+/* Botões de Formulário (Dark) */
 .btn-dark {
     border-radius: 50px; font-weight: bold;
     background: #000; color: #fff; border: 1px solid #333;
 }
 .btn-dark:hover { background: #333; color: #fff; }
 
-/* 7. FORMULÁRIOS & LISTAS (CORREÇÃO AQUI) */
+/* 7. FORMULÁRIOS
+   Estilização dos inputs para o tema escuro. */
 .form-control, .form-select {
-    background-color: rgba(255,255,255,0.1) !important;
+    background-color: #ffffff1a !important;
     border: 1px solid #444; 
-    color: #fff !important; /* Texto branco */
+    color: #fff !important; 
 }
 
-/* CORREÇÃO DO BUG: Força as opções do dropdown a serem pretas */
+/* Correção Crítica: Opções do dropdown com fundo preto */
 .form-select option {
     background-color: #000;
     color: #fff;
@@ -191,61 +203,47 @@ section { padding: 80px 0; }
 }
 
 .methodology-list li {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid #ffffff1a;
     padding-bottom: 15px;
 }
 
-/* 8. ANIMAÇÕES */
-html { scroll-behavior: smooth; } /* Scroll suave para o botão 'Voltar ao Topo' */
+/* 8. ANIMAÇÕES E RODAPÉ */
+html { scroll-behavior: smooth; } /* Permite scroll suave para o topo */
 
 .animate-fade { animation: fadeInUp 1.2s ease forwards; opacity: 0; }
 .delay-1 { animation-delay: 0.3s; }
-@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } from { opacity: 0; transform: translateY(20px); } }
 
-footer { background-color: #000; border-top: 1px solid #222; padding: 20px 0; }
+@keyframes fadeInUp { 
+    to { opacity: 1; transform: translateY(0); } 
+    from { opacity: 0; transform: translateY(20px); } 
+}
 
-/* ============================================================
-   9. ACESSIBILIDADE (WCAG 2.1)
-   ============================================================ */
+footer {
+    background-color: #000;
+    border-top: 1px solid #222;
+    padding: 20px 0;
+    position: relative;
+}
 
-/* Foco visível para navegação por teclado */
+/* 9. ACESSIBILIDADE (WCAG)
+   Anel de foco visível para navegação por teclado. */
 *:focus-visible {
-    outline: 3px solid #ffffff !important; /* Borda branca grossa */
-    outline-offset: 3px; /* Afastada do elemento */
-    box-shadow: 0 0 0 5px rgba(0,0,0,0.8); /* Sombra para contraste no branco */
+    outline: 3px solid #ffffff !important;
+    outline-offset: 3px;
 }
 
-/* Link "Saltar para Conteúdo" (Só aparece quando focado) */
+/* Link para leitores de ecrã saltarem o menu */
 .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #fff;
-    color: #000;
-    padding: 8px;
-    z-index: 9999;
-    transition: top 0.3s;
-    font-weight: bold;
+    position: absolute; top: -40px; left: 0; background: #fff; color: #000; padding: 8px; z-index: 9999;
 }
+.skip-link:focus { top: 0; }
 
-.skip-link:focus {
-    top: 0;
-}
-
-/* ============================================================
-   10. INTERATIVIDADE JS (Classes adicionadas pelo script.js)
-   ============================================================ */
-
-/* Quando se faz scroll, o JS adiciona esta classe à navbar */
+/* 10. CLASSES DINÂMICAS JS */
 .navbar-scrolled {
-    background-color: #000000 !important; /* Preto Sólido */
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1); /* Ligeiro brilho em baixo */
-    padding-top: 10px !important;    /* Fica mais compacta */
+    background-color: #000000 !important;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    padding-top: 10px !important;
     padding-bottom: 10px !important;
     transition: all 0.3s ease;
 }
-
-/* Estado normal da navbar (para garantir a transição suave) */
-.navbar {
-    transition: all 0.3s ease;
-}
+.navbar { transition: all 0.3s ease; }
