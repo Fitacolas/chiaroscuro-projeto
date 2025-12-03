@@ -1,51 +1,79 @@
 # Chiaroscuro Digital 🌗
-> Desigualdade e Indiferença na Era do Scroll
 
-![Chiaroscuro Banner](images/logo.jpg)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+
+> **"Quando a velocidade mata a empatia."**
+
+![Chiaroscuro Banner](https://raw.githubusercontent.com/Fitacolas/chiaroscuro-projeto/main/projeto-chiaroscuro/images/logo.jpg)
+
+---
 
 ## 📖 Sobre o Projeto
 
-**Chiaroscuro Digital** é uma investigação académica desenvolvida no âmbito da unidade curricular de **Programação Web (PWC)** do curso de Engenharia Informática do **ISLA Gaia**.
+**Chiaroscuro Digital** é uma investigação académica e projeto web desenvolvido no âmbito da unidade curricular de **Programação Web (PWC)** da Licenciatura em Engenharia Informática do **ISLA Gaia**.
 
-O projeto explora, através de uma narrativa web imersiva, o conceito de "Chiaroscuro" aplicado à era digital: o contraste brutal entre a estética perfeita das redes sociais e a realidade crua da desigualdade, e como a velocidade do *scroll* gera um entorpecimento psíquico (indiferença).
-
-### 🎯 Objetivos
-* **Demonstrar** o impacto cognitivo do "scroll infinito".
-* **Aplicar** conhecimentos técnicos de HTML5, CSS3 e JavaScript.
-* **Sensibilizar** para a ética no design de algoritmos.
+O projeto explora a **dissonância cognitiva** provocada pelo "scroll infinito" nas redes sociais: o contraste brutal entre a estética perfeita e a realidade crua da desigualdade, e como a velocidade de consumo de informação gera um entorpecimento psíquico (*Psychic Numbing*).
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🌐 Demo Online
 
-Este projeto foi construído sem dependências pesadas, focando-se na performance e nos standards da web.
-
-* **HTML5 Semântico:** Estrutura acessível e organizada.
-* **CSS3 Moderno:** Variáveis CSS, Flexbox, Grid e Animações (`keyframes`).
-* **JavaScript (Vanilla):** Manipulação do DOM e lógica de interação.
-* **Bootstrap 5:** Sistema de grelha responsiva e componentes de UI.
-* **FontAwesome:** Ícones vetoriais.
-* **Google Firebase:** Alojamento e CI/CD.
-
----
-
-## 🌐 Aceder ao Site
-
-O projeto está alojado e acessível publicamente através do Firebase Hosting:
+O projeto encontra-se alojado e funcional em:
 
 👉 **[https://chiaroscuro-web.web.app](https://chiaroscuro-web.web.app)**
 
 ---
 
-## 🛠️ Estrutura do Projeto
+## ✨ Funcionalidades Principais
+
+* **Design "Chiaroscuro":** Um tema escuro nativo (Dark Mode) com gradientes animados que simulam o fluxo contínuo de dados.
+* **Acessibilidade (A11y):**
+    * Navegação por teclado totalmente suportada.
+    * Widget de acessibilidade integrado.
+    * Alto contraste para legibilidade.
+* **Gráficos SVG:** Visualização de dados (atenção, dopamina) desenhada diretamente em código para máxima nitidez.
+* **Interatividade:**
+    * Barra de navegação reativa ao scroll.
+    * Simulação de *backend* nos formulários de contacto.
+    * Página 404 personalizada com efeito "Glitch".
+
+---
+
+## 👥 Autores
+
+Este projeto foi desenvolvido pela seguinte equipa de investigação:
+
+* **Ruben Lemos** - [LinkedIn](https://www.linkedin.com/in/ruben-r-lemos/)
+    * *Foco:* Arquitetura de Informação, JavaScript e Deploy.
+* **Miguel Novo** - [LinkedIn](https://www.linkedin.com/in/miguel-novo-ab6518233/)
+    * *Foco:* Design Visual, CSS e Pesquisa Teórica.
+
+---
+
+## 📚 Referências Bibliográficas
+
+A base teórica deste projeto apoia-se nos estudos de:
+
+* **Gloria Mark** (University of California, Irvine) - *Attention Span*.
+* **Nir Eyal** - *Hooked: How to Build Habit-Forming Products*.
+* **Paul Slovic** (University of Oregon) - *Psychic Numbing*.
+
+---
+
+## 🛠️ Estrutura do Repositório
 
 ```text
 /
-├── index.html          # Página Inicial (Manifesto e Equipa)
-├── projeto.html        # A Investigação (Dados e Gráficos SVG)
-├── parceiros.html      # Ecossistema e Referências
-├── contactos.html      # Acesso aos Dados e Localização
-├── styles.css          # Folha de Estilos (Dark Mode & Animações)
-├── main.js             # Lógica de Script (Navbar, Formulários)
-├── firebase.json       # Configuração de Alojamento
-└── images/             # Recursos gráficos
+├── index.html          # Homepage: Manifesto e Apresentação da Equipa
+├── projeto.html        # Investigação: Dados Científicos e Gráficos SVG
+├── parceiros.html      # Ecossistema: Tecnologias e Bibliografia
+├── contactos.html      # Acesso: Formulário de Requisição de Dados
+├── 404.html            # Página de Erro Personalizada (Glitch Effect)
+├── styles.css          # Design System (Dark Mode, Gradientes, Overrides)
+├── main.js             # Lógica de Script (Navbar, Validação, DOM)
+├── firebase.json       # Configuração de Deploy
+└── images/             # Assets gráficos
