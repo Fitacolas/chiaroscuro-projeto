@@ -4,21 +4,19 @@
    DESCRIÇÃO: Folha de estilos principal (Design System).
    ============================================================ */
 
-/* 1. CONFIGURAÇÕES GERAIS (RESET)
-   Define as cores base e a tipografia para todo o site. */
+/* 1. CONFIGURAÇÕES GERAIS (RESET) */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #000; /* Fundo de segurança */
-    color: #e0e0e0; /* Texto claro para leitura confortável em fundo escuro */
+    background-color: #000;
+    color: #e0e0e0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o rodapé fica sempre no fundo */
+    min-height: 100vh;
 }
 
 a { text-decoration: none; }
 
-/* 2. FUNDO ANIMADO (GRADIENTE)
-   Cria a identidade visual do projeto com uma animação suave. */
+/* 2. O FUNDO ANIMADO */
 .gradient-background,
 .hero-section,
 .hero-subpage {
@@ -35,15 +33,13 @@ a { text-decoration: none; }
     100% { background-position: 0% 50%; }
 }
 
-/* 3. BARRA DE NAVEGAÇÃO (NAVBAR)
-   Estilo "Vidro" com fundo translúcido. */
+/* 3. NAVBAR */
 .navbar {
-  background-color: #000000b3; /* Preto com transparência */
-  backdrop-filter: blur(10px); /* Efeito de desfoque */
-  border-bottom: none; /* Remove linhas indesejadas */
+  background-color: #000000b3;
+  backdrop-filter: blur(10px);
+  border-bottom: none;
 }
 
-/* Estilo dos Links do Menu */
 .nav-link {
     color: #bbb !important;
     text-transform: uppercase;
@@ -56,7 +52,6 @@ a { text-decoration: none; }
     margin-left: 15px;
 }
 
-/* Animação do Sublinhado no Menu */
 .nav-link::after {
     content: '';
     position: absolute;
@@ -68,7 +63,6 @@ a { text-decoration: none; }
     transition: width 0.3s ease-in-out;
 }
 
-/* Mostra o sublinhado se o link estiver ativo ou no hover */
 .nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
@@ -78,25 +72,22 @@ a { text-decoration: none; }
     color: #fff !important;
 }
 
-/* 4. CABEÇALHOS (HERO SECTIONS)
-   Configuração das áreas de destaque em cada página. */
+/* 4. HERO & TÍTULOS */
 .hero-section {
-    min-height: 60vh; /* Altura para a Homepage */
+    min-height: 60vh; 
     display: flex; align-items: center; justify-content: center;
     padding-top: 40px;
 }
 
 .hero-subpage {
-    min-height: 50vh; /* Altura para páginas internas */
+    min-height: 50vh;
     display: flex; align-items: center; justify-content: center;
     padding-top: 60px;
 }
 
-/* Tipografia dos Títulos Principais */
 .hero-section h1, .hero-subpage h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    /* Texto com gradiente metálico */
     background: linear-gradient(90deg, #000000, #bdbdbd);
     -webkit-background-clip: text;
     background-clip: text;
@@ -109,18 +100,16 @@ a { text-decoration: none; }
     color: #000;
     font-weight: 600;
     text-align: center;
-    text-shadow: 0px 0px 10px #ffffffe6; /* Sombra branca para contraste */
+    text-shadow: 0px 0px 10px #ffffffe6;
 }
 
-/* Imagem do Logótipo Redondo */
 .logo-redondo {
     border-radius: 50%; object-fit: cover;
     border: 4px solid #ffffff33;
     box-shadow: 0 10px 30px #00000080;
 }
 
-/* 5. MODO ESCURO E CARTÕES
-   Classes utilitárias para garantir legibilidade no tema escuro. */
+/* 5. CLASSES DE UTILIDADE DARK MODE */
 section { padding: 80px 0; }
 
 .bg-light, .bg-white {
@@ -128,12 +117,11 @@ section { padding: 80px 0; }
     color: #fff !important;
 }
 .bg-darker {
-    background-color: #0a0a0a !important; /* Fundo quase preto */
+    background-color: #0a0a0a !important;
 }
 
-/* Estilo unificado para Cartões (Cards) */
 .card, article, .partner-card, .timeline-box {
-    background-color: #141414d9 !important; /* Fundo escuro */
+    background-color: #141414d9 !important;
     border: 1px solid #ffffff1a;
     color: #fff;
     backdrop-filter: blur(5px);
@@ -141,7 +129,7 @@ section { padding: 80px 0; }
 }
 
 .card:hover, .partner-card:hover, .timeline-box:hover {
-    transform: translateY(-5px); /* Efeito de levitação */
+    transform: translateY(-5px);
     border-color: #fff;
     background-color: #000 !important;
 }
@@ -151,8 +139,7 @@ section { padding: 80px 0; }
 }
 .card:hover .member-img { opacity: 1; }
 
-/* 6. BOTÕES (DESIGN SYSTEM)
-   Regra unificada: Fundo Branco, Texto Preto. */
+/* 6. BOTÕES */
 .btn-light, .btn-outline-light {
     background-color: #ffffff !important;
     color: #000000 !important;
@@ -167,32 +154,28 @@ section { padding: 80px 0; }
     display: inline-block;
 }
 
-/* Efeito Hover nos botões */
 .btn-light:hover, 
 .btn-outline-light:hover {
     background-color: #ffffff !important;
     color: #000000 !important;
-    border: 2px solid #000000 !important; /* Borda preta em destaque */
+    border: 2px solid #000000 !important;
     transform: scale(1.05);
     box-shadow: 0 0 15px #ffffff80;
 }
 
-/* Botões de Formulário (Dark) */
 .btn-dark {
     border-radius: 50px; font-weight: bold;
     background: #000; color: #fff; border: 1px solid #333;
 }
 .btn-dark:hover { background: #333; color: #fff; }
 
-/* 7. FORMULÁRIOS
-   Estilização dos inputs para o tema escuro. */
+/* 7. FORMULÁRIOS & LISTAS */
 .form-control, .form-select {
     background-color: #ffffff1a !important;
     border: 1px solid #444; 
     color: #fff !important; 
 }
 
-/* Correção Crítica: Opções do dropdown com fundo preto */
 .form-select option {
     background-color: #000;
     color: #fff;
@@ -202,21 +185,22 @@ section { padding: 80px 0; }
     box-shadow: 0 0 0 2px #fff; border-color: #fff;
 }
 
+.is-invalid {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 1px #dc3545;
+}
+
 .methodology-list li {
     border-bottom: 1px solid #ffffff1a;
     padding-bottom: 15px;
 }
 
-/* 8. ANIMAÇÕES E RODAPÉ */
-html { scroll-behavior: smooth; } /* Permite scroll suave para o topo */
+/* 8. ANIMAÇÕES & FOOTER */
+html { scroll-behavior: smooth; }
 
 .animate-fade { animation: fadeInUp 1.2s ease forwards; opacity: 0; }
 .delay-1 { animation-delay: 0.3s; }
-
-@keyframes fadeInUp { 
-    to { opacity: 1; transform: translateY(0); } 
-    from { opacity: 0; transform: translateY(20px); } 
-}
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } from { opacity: 0; transform: translateY(20px); } }
 
 footer {
     background-color: #000;
@@ -225,20 +209,18 @@ footer {
     position: relative;
 }
 
-/* 9. ACESSIBILIDADE (WCAG)
-   Anel de foco visível para navegação por teclado. */
+/* 9. ACESSIBILIDADE */
 *:focus-visible {
     outline: 3px solid #ffffff !important;
     outline-offset: 3px;
 }
 
-/* Link para leitores de ecrã saltarem o menu */
 .skip-link {
     position: absolute; top: -40px; left: 0; background: #fff; color: #000; padding: 8px; z-index: 9999;
 }
 .skip-link:focus { top: 0; }
 
-/* 10. CLASSES DINÂMICAS JS */
+/* 10. INTERATIVIDADE */
 .navbar-scrolled {
     background-color: #000000 !important;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
@@ -247,3 +229,59 @@ footer {
     transition: all 0.3s ease;
 }
 .navbar { transition: all 0.3s ease; }
+
+/* 11. PÁGINA 404 (EFEITO GLITCH) */
+.glitch {
+    font-size: 8rem;
+    font-weight: 900;
+    position: relative;
+    color: #fff;
+    letter-spacing: -5px;
+    text-shadow: 2px 2px 0px rgba(255,0,0,0.7), -2px -2px 0px rgba(0,0,255,0.7);
+    animation: glitch-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% { text-shadow: 2px 2px 0px rgba(255,0,0,0.7), -2px -2px 0px rgba(0,0,255,0.7); }
+    50% { text-shadow: 2px -2px 0px rgba(255,0,0,0.7), -2px 2px 0px rgba(0,0,255,0.7); }
+    100% { text-shadow: 2px 2px 0px rgba(255,0,0,0.7), -2px -2px 0px rgba(0,0,255,0.7); }
+}
+
+/* ============================================================
+   12. MEDIA QUERIES (AJUSTES PARA MOBILE)
+   ============================================================ */
+@media (max-width: 768px) {
+    
+    /* Títulos mais pequenos no telemóvel para não sair do ecrã */
+    .hero-section h1, 
+    .hero-subpage h1,
+    .glitch {
+        font-size: 2.2rem !important; 
+        line-height: 1.2;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Ajuste de margens nos subtítulos */
+    .hero-section h2, 
+    .hero-subpage p {
+        font-size: 1rem !important;
+        padding: 0 20px;
+        line-height: 1.5;
+    }
+
+    /* Puxar o conteúdo para baixo para não ficar tapado pelo menu */
+    .hero-section,
+    .hero-subpage {
+        padding-top: 150px; 
+        min-height: auto; 
+        padding-bottom: 60px;
+    }
+
+    /* Logo mais pequeno */
+    .logo-redondo {
+        width: 80px !important;
+        height: 80px !important;
+    }
+}
